@@ -24,7 +24,7 @@ dif max a b
 end
 end
 
-/// should return i after the for loop. 1..10 should be in brackets.
+/// 1..10 should be in brackets.
 def looper
   for i in 1..10
   puts i
@@ -33,7 +33,7 @@ end
 
 failures = 0
 
-/// no end statement. not testing the whole range.
+/// no end statement. needs looper == (1..10)
 if looper == 10
   puts "looper passed"
 else

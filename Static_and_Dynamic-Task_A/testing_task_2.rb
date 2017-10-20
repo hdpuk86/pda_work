@@ -23,12 +23,11 @@ def looper
   for i in (1..10)
     puts i
   end
-  return i
 end
 
 failures = 0
 
-if looper == 10
+if looper == (1..10)
   puts "looper passed"
 else
   puts "looper failed"

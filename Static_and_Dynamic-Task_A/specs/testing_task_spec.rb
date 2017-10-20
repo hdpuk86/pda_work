@@ -21,7 +21,7 @@ class Test_testing_task < MiniTest::Test
 
   def test_looper()
     actual = looper()
-    assert_equal(10, actual)
+    assert_equal(1..10, actual)
   end
 
 end
